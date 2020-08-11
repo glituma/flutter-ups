@@ -56,3 +56,5 @@
   void test() {
     print('test');
   }
+
+  //Funciones aleatorias
