@@ -1,0 +1,58 @@
+//string
+  /*
+  String name='Gorki';
+  print('Hola $name');
+  print(name[name.length-1]);
+  print(name.length);
+  
+  //int
+  int empleados = 10;
+  double pi = 3.141516;
+  var resultado = empleados * pi;
+  print ('Empleados: $empleados - pi: $pi');
+  print (resultado);
+  
+  //bool
+  bool active = false;
+  if (active){
+    print('Activado');
+  }
+    else{
+      print('Desactivado');
+  }
+  
+  //Listas
+  List<int> numeros=[1,2,3,4,5,6,7,8,9];
+  numeros.add(200);
+  print (numeros);
+  numeros.remove(5);
+  print (numeros);
+  
+  List numerosList =  List(20);
+  print(numerosList);
+  
+  numerosList[3] = 200;
+  print(numerosList);
+  
+  for(int i=0; i < numerosList.length; i++) {
+    numerosList[i]=i;
+  }
+  print (numerosList);
+  */
+  //Map
+  Map<String, dynamic> persona = {
+    'nombre': 'Gorki',
+    'edad': '37',
+    'estadoCivil': 'casado'   
+  };
+  //print (persona['nombre']);
+  //print (persona['edad']);
+  //print (persona['estadoCivil']);
+  
+  persona.addAll({'telefono': '0997544415'};)
+  print (persona);
+
+  //Funciones
+  void test() {
+    print('test');
+  }
