@@ -1,0 +1,440 @@
+{
+	"info": {
+		"_postman_id": "3fcd6f71-73ea-43fe-9194-47dee4ffc2f5",
+		"name": "SERVIDOR SEMINARIO",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "USER",
+			"item": [
+				{
+					"name": "POST LOGIN USER",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "email",
+									"value": "jperez@email.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123456",
+									"type": "text"
+								}
+							],
+							"options": {
+								"urlencoded": {}
+							}
+						},
+						"url": {
+							"raw": "http://157.245.116.71:3020/login",
+							"protocol": "http",
+							"host": [
+								"157",
+								"245",
+								"116",
+								"71"
+							],
+							"port": "3020",
+							"path": [
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST USER",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Juan Perez",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "jperez@email.com",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "0999008756",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123456",
+									"type": "text"
+								}
+							],
+							"options": {
+								"urlencoded": {}
+							}
+						},
+						"url": {
+							"raw": "http://157.245.116.71:3020/user",
+							"protocol": "http",
+							"host": [
+								"157",
+								"245",
+								"116",
+								"71"
+							],
+							"port": "3020",
+							"path": [
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET DATA SESSION",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImltZyI6ImZsdXR0ZXItaW1nIiwiX2lkIjoiNWYzNGM5ODJkZDQ2ZjMyOGE1NGM3MzViIiwibmFtZSI6Ikp1YW4gUGVyZXoiLCJlbWFpbCI6ImpwZXJlekBlbWFpbC5jb20iLCJwaG9uZSI6IjA5OTkwMDg3NTYiLCJkYXRlIjoiMjAyMC0wOC0xM1QwNTowMjo1OC40NjJaIiwiX192IjowfSwiaWF0IjoxNTk3Mjk1MDI4fQ.Ac4piGRhMP7yMXakD11touhQzrpBoeqB7ZBdhpAKr2g",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://157.245.116.71:3020/session",
+							"protocol": "http",
+							"host": [
+								"157",
+								"245",
+								"116",
+								"71"
+							],
+							"port": "3020",
+							"path": [
+								"session"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE USER",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImltZyI6ImZsdXR0ZXItaW1nIiwiX2lkIjoiNWYzNGM5ODJkZDQ2ZjMyOGE1NGM3MzViIiwibmFtZSI6Ikp1YW4gUGVyZXoiLCJlbWFpbCI6ImpwZXJlekBlbWFpbC5jb20iLCJwaG9uZSI6IjA5OTkwMDg3NTYiLCJkYXRlIjoiMjAyMC0wOC0xM1QwNTowMjo1OC40NjJaIiwiX192IjowfSwiaWF0IjoxNTk3Mjk1MDI4fQ.Ac4piGRhMP7yMXakD11touhQzrpBoeqB7ZBdhpAKr2g",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Juan Perez A.",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "jperez@email.com",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "0999008756",
+									"type": "text"
+								},
+								{
+									"key": "img",
+									"type": "file",
+									"src": "/Users/lema/Downloads/carpeta sin título 6/subir.png"
+								},
+								{
+									"key": "password",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								}
+							],
+							"options": {
+								"formdata": {}
+							}
+						},
+						"url": {
+							"raw": "http://157.245.116.71:3020/user",
+							"protocol": "http",
+							"host": [
+								"157",
+								"245",
+								"116",
+								"71"
+							],
+							"port": "3020",
+							"path": [
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET USER IMAGE",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://157.245.116.71:3020/img/user/upload_c43c0d2c479501038b08e785821c25d7.png",
+							"protocol": "http",
+							"host": [
+								"157",
+								"245",
+								"116",
+								"71"
+							],
+							"port": "3020",
+							"path": [
+								"img",
+								"user",
+								"upload_c43c0d2c479501038b08e785821c25d7.png"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "PRODUCT",
+			"item": [
+				{
+					"name": "POST PRODUCT",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImltZyI6ImZsdXR0ZXItaW1nIiwiX2lkIjoiNWYzNGM5ODJkZDQ2ZjMyOGE1NGM3MzViIiwibmFtZSI6Ikp1YW4gUGVyZXoiLCJlbWFpbCI6ImpwZXJlekBlbWFpbC5jb20iLCJwaG9uZSI6IjA5OTkwMDg3NTYiLCJkYXRlIjoiMjAyMC0wOC0xM1QwNTowMjo1OC40NjJaIiwiX192IjowfSwiaWF0IjoxNTk3Mjk1MDI4fQ.Ac4piGRhMP7yMXakD11touhQzrpBoeqB7ZBdhpAKr2g",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "Test Title 2",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "Test Description 2",
+									"type": "text"
+								},
+								{
+									"key": "value",
+									"value": "25",
+									"type": "text"
+								},
+								{
+									"key": "img",
+									"type": "file",
+									"src": "/Users/lema/Desktop/Captura de Pantalla 2020-08-09 a la(s) 20.27.56.png"
+								}
+							],
+							"options": {
+								"formdata": {}
+							}
+						},
+						"url": {
+							"raw": "http://157.245.116.71:3020/product",
+							"protocol": "http",
+							"host": [
+								"157",
+								"245",
+								"116",
+								"71"
+							],
+							"port": "3020",
+							"path": [
+								"product"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET ALL PRODUCTS",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/products",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET MINE PRODUCTS",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImltZyI6ImZsdXR0ZXItaW1nIiwiX2lkIjoiNWYzNGM5ODJkZDQ2ZjMyOGE1NGM3MzViIiwibmFtZSI6Ikp1YW4gUGVyZXoiLCJlbWFpbCI6ImpwZXJlekBlbWFpbC5jb20iLCJwaG9uZSI6IjA5OTkwMDg3NTYiLCJkYXRlIjoiMjAyMC0wOC0xM1QwNTowMjo1OC40NjJaIiwiX192IjowfSwiaWF0IjoxNTk3Mjk1MDI4fQ.Ac4piGRhMP7yMXakD11touhQzrpBoeqB7ZBdhpAKr2g",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://157.245.116.71:3020/user/products",
+							"protocol": "http",
+							"host": [
+								"157",
+								"245",
+								"116",
+								"71"
+							],
+							"port": "3020",
+							"path": [
+								"user",
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET PRODUCT IMAGE",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://157.245.116.71:3020/img/product/upload_bf03d2c4a68147a05d7d0b7ea152e1ac.png",
+							"protocol": "http",
+							"host": [
+								"157",
+								"245",
+								"116",
+								"71"
+							],
+							"port": "3020",
+							"path": [
+								"img",
+								"product",
+								"upload_bf03d2c4a68147a05d7d0b7ea152e1ac.png"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE PRODUCT",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImltZyI6ImZsdXR0ZXItaW1nIiwiX2lkIjoiNWYzNGM5ODJkZDQ2ZjMyOGE1NGM3MzViIiwibmFtZSI6Ikp1YW4gUGVyZXoiLCJlbWFpbCI6ImpwZXJlekBlbWFpbC5jb20iLCJwaG9uZSI6IjA5OTkwMDg3NTYiLCJkYXRlIjoiMjAyMC0wOC0xM1QwNTowMjo1OC40NjJaIiwiX192IjowfSwiaWF0IjoxNTk3Mjk1MDI4fQ.Ac4piGRhMP7yMXakD11touhQzrpBoeqB7ZBdhpAKr2g",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://157.245.116.71:3020/product/5f34ca7add46f328a54c735c",
+							"protocol": "http",
+							"host": [
+								"157",
+								"245",
+								"116",
+								"71"
+							],
+							"port": "3020",
+							"path": [
+								"product",
+								"5f34ca7add46f328a54c735c"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT PRODUCT",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImltZyI6ImZsdXR0ZXItaW1nIiwiX2lkIjoiNWYzNGM5ODJkZDQ2ZjMyOGE1NGM3MzViIiwibmFtZSI6Ikp1YW4gUGVyZXoiLCJlbWFpbCI6ImpwZXJlekBlbWFpbC5jb20iLCJwaG9uZSI6IjA5OTkwMDg3NTYiLCJkYXRlIjoiMjAyMC0wOC0xM1QwNTowMjo1OC40NjJaIiwiX192IjowfSwiaWF0IjoxNTk3Mjk1MDI4fQ.Ac4piGRhMP7yMXakD11touhQzrpBoeqB7ZBdhpAKr2g",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "Updated",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "Updated decription",
+									"type": "text"
+								},
+								{
+									"key": "value",
+									"value": "500",
+									"type": "text"
+								},
+								{
+									"key": "img",
+									"type": "file",
+									"src": "/Users/lema/Desktop/Simulator Screen Shot - iPhone 11 Pro Max - 2020-07-17 at 15.30.07.png"
+								}
+							],
+							"options": {
+								"formdata": {}
+							}
+						},
+						"url": {
+							"raw": "http://157.245.116.71:3020/product/5f34cab0dd46f328a54c735e",
+							"protocol": "http",
+							"host": [
+								"157",
+								"245",
+								"116",
+								"71"
+							],
+							"port": "3020",
+							"path": [
+								"product",
+								"5f34cab0dd46f328a54c735e"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
